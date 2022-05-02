@@ -1,0 +1,12 @@
+digraph "safebox::Prototype::run"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="safebox::Prototype::run",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Method of safebox protype which used to make connection and use accelerometer."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="safebox::Action::run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsafebox_1_1_action.html#ab8107441c6b082ca127cb81183b16216",tooltip="used to use the method run of prototype"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip=" "];
+}
