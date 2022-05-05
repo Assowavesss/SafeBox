@@ -1,0 +1,96 @@
+\hypertarget{classsavebox_1_1ISB}{}\doxysection{I\+SB}
+\label{classsavebox_1_1ISB}\index{ISB@{ISB}}
+
+
+Interface which describe the protoype of savebox.  
+
+
+
+
+{\ttfamily \#include $<$I\+S\+B.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classsavebox_1_1ISB_a8c7d943a094b0a5725a243bbc76b91e4}{$\sim$\+I\+SB}} (void)
+\begin{DoxyCompactList}\small\item\em virtual Destructor which will be overridden by SB \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsavebox_1_1ISB_a1982284a68a05ce568af14ad6df5d288}{connection}} (const char $\ast$ssid, const char $\ast$password, const char $\ast$url, const char $\ast$key)=0
+\begin{DoxyCompactList}\small\item\em method of savebox to make a connectio with database \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsavebox_1_1ISB_a8bdce042a76a879fe2caeb87ed3b919b}{run}} (void)=0
+\begin{DoxyCompactList}\small\item\em method of savebox to use accelerometer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classsavebox_1_1ISB_a5bc8bab246e415c009a31f9d02916fa4}{accident}} (void)=0
+\begin{DoxyCompactList}\small\item\em method of savebox to see if there is an accident or not \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsavebox_1_1ISB_ae8747cabeed19c9c91e3aeea0ffcce14}{send\+Data}} (void)=0
+\begin{DoxyCompactList}\small\item\em method of savebox to send data of passenger is there is an accident \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface which describe the protoype of savebox. 
+
+\begin{DoxySeeAlso}{See also}
+SB 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsavebox_1_1ISB_a8c7d943a094b0a5725a243bbc76b91e4}\label{classsavebox_1_1ISB_a8c7d943a094b0a5725a243bbc76b91e4}} 
+\index{ISB@{ISB}!````~ISB@{$\sim$ISB}}
+\index{````~ISB@{$\sim$ISB}!ISB@{ISB}}
+\doxysubsubsection{\texorpdfstring{$\sim$ISB()}{~ISB()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+virtual Destructor which will be overridden by SB 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsavebox_1_1ISB_a5bc8bab246e415c009a31f9d02916fa4}\label{classsavebox_1_1ISB_a5bc8bab246e415c009a31f9d02916fa4}} 
+\index{ISB@{ISB}!accident@{accident}}
+\index{accident@{accident}!ISB@{ISB}}
+\doxysubsubsection{\texorpdfstring{accident()}{accident()}}
+{\footnotesize\ttfamily bool accident (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+method of savebox to see if there is an accident or not 
+
+\mbox{\Hypertarget{classsavebox_1_1ISB_a1982284a68a05ce568af14ad6df5d288}\label{classsavebox_1_1ISB_a1982284a68a05ce568af14ad6df5d288}} 
+\index{ISB@{ISB}!connection@{connection}}
+\index{connection@{connection}!ISB@{ISB}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}}
+{\footnotesize\ttfamily void connection (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ssid,  }\item[{const char $\ast$}]{password,  }\item[{const char $\ast$}]{url,  }\item[{const char $\ast$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+method of savebox to make a connectio with database 
+
+\mbox{\Hypertarget{classsavebox_1_1ISB_a8bdce042a76a879fe2caeb87ed3b919b}\label{classsavebox_1_1ISB_a8bdce042a76a879fe2caeb87ed3b919b}} 
+\index{ISB@{ISB}!run@{run}}
+\index{run@{run}!ISB@{ISB}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void run (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+method of savebox to use accelerometer 
+
+\mbox{\Hypertarget{classsavebox_1_1ISB_ae8747cabeed19c9c91e3aeea0ffcce14}\label{classsavebox_1_1ISB_ae8747cabeed19c9c91e3aeea0ffcce14}} 
+\index{ISB@{ISB}!sendData@{sendData}}
+\index{sendData@{sendData}!ISB@{ISB}}
+\doxysubsubsection{\texorpdfstring{sendData()}{sendData()}}
+{\footnotesize\ttfamily void send\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+method of savebox to send data of passenger is there is an accident 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ISB_8h}{I\+S\+B.\+h}}\end{DoxyCompactItemize}
