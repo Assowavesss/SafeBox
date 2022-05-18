@@ -11,8 +11,7 @@ to use accelerometer for savebox to detect accident
 
 
 
-Inheritance diagram for SB\+:
-\nopagebreak
+Inheritance diagram for SB\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for SB\+:
 \end{figure}
 
 
-Collaboration diagram for SB\+:
-\nopagebreak
+Collaboration diagram for SB\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -34,12 +32,20 @@ Collaboration diagram for SB\+:
 \item 
 \mbox{\hyperlink{classsavebox_1_1SB_ab825b0bc61e0bfac5a2a98593c8aa07a}{SB}} (void)
 \begin{DoxyCompactList}\small\item\em make a connection with acceleromter and initialize the connection object conn\+\_\+ to nullptr \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classsavebox_1_1SB_a4498fdea14fea0ff8ab09388ea634cf5}{$\sim$\+SB}} (void)
+\mbox{\hyperlink{classsavebox_1_1SB_a38907919bc4239984d2195ccffd44a23}{$\sim$\+SB}} (void) noexcept
 \begin{DoxyCompactList}\small\item\em destruct the connection object conn\+\_\+ and set it to nullptr \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classsavebox_1_1SB_ac94ef628a3faf19bd206a8ebe048ab68}{connection}} (const char $\ast$ssid, const char $\ast$password, const char $\ast$url, const char $\ast$key) override
 \begin{DoxyCompactList}\small\item\em make connection with database using the Adapter pattern \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classsavebox_1_1SB_a7a6b646e8408f78beb61f9a9571cd772}{run}} (void) override
-\begin{DoxyCompactList}\small\item\em inherited by I\+S\+B\+::run(void) const, this method is used to run accelerometer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em inherited by I\+S\+B\+::run(void) const, this method is used to run accelerometer \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsavebox_1_1SB_a116a6c5b0029d898838212c68391faa2}{SB}} (\mbox{\hyperlink{classsavebox_1_1SB}{SB}} \&\&other)=delete
+\item 
+\mbox{\hyperlink{classsavebox_1_1SB_aa80d49bf31b38efe533cc25a94979e2d}{SB}} (const \mbox{\hyperlink{classsavebox_1_1SB}{SB}} \&other)=delete
+\item 
+\mbox{\hyperlink{classsavebox_1_1SB}{SB}} \& \mbox{\hyperlink{classsavebox_1_1SB_a4f7579904ed5b5c28493fef556026aac}{operator=}} (const \mbox{\hyperlink{classsavebox_1_1SB}{SB}} \&other)=delete
+\item 
+\mbox{\hyperlink{classsavebox_1_1SB}{SB}} \& \mbox{\hyperlink{classsavebox_1_1SB_afc4b1565aabd18df5d29d7ccb3450d25}{operator=}} (\mbox{\hyperlink{classsavebox_1_1SB}{SB}} \&\&other)=delete
+\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -50,12 +56,12 @@ void \mbox{\hyperlink{classsavebox_1_1SB_ab034d49a6d05c74b13878e03e2a47f56}{send
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-float \mbox{\hyperlink{classsavebox_1_1SB_a2786a9c74d31348906d13b023cf3eb11}{x\+\_\+out}}
-\item 
-float \mbox{\hyperlink{classsavebox_1_1SB_a7b146ee79e06cca08bb8f2c33e1b8b1d}{y\+\_\+out}}
-\item 
-float \mbox{\hyperlink{classsavebox_1_1SB_af1b3b32e5b5486e6774d3a7ae2627bea}{z\+\_\+out}}
-\item 
+float \mbox{\hyperlink{classsavebox_1_1SB_a2d9337ff627a0bdf8054f4029d4f2cd7}{x\+\_\+out}}
+\begin{DoxyCompactList}\small\item\em axis x for A\+D\+X\+L345 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classsavebox_1_1SB_a92a746263988c6e70952572d6e5f2ae7}{y\+\_\+out}}
+\begin{DoxyCompactList}\small\item\em axis y for A\+D\+X\+L345 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classsavebox_1_1SB_a598010bfcfe443de4370795f98bccf68}{z\+\_\+out}}
+\begin{DoxyCompactList}\small\item\em axis z for A\+D\+X\+L345 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classsavebox_1_1Connection}{Connection}} $\ast$ \mbox{\hyperlink{classsavebox_1_1SB_ae2b58db277bf5072a57acf1cd68895b3}{conn\+\_\+}}
 \begin{DoxyCompactList}\small\item\em create connection object to allow to \mbox{\hyperlink{classsavebox_1_1SB}{SB}} to connect to database \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -72,22 +78,36 @@ to use accelerometer for savebox to detect accident
 \mbox{\Hypertarget{classsavebox_1_1SB_ab825b0bc61e0bfac5a2a98593c8aa07a}\label{classsavebox_1_1SB_ab825b0bc61e0bfac5a2a98593c8aa07a}} 
 \index{SB@{SB}!SB@{SB}}
 \index{SB@{SB}!SB@{SB}}
-\doxysubsubsection{\texorpdfstring{SB()}{SB()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classsavebox_1_1SB}{SB}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{SB()}{SB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsavebox_1_1SB}{SB}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
 make a connection with acceleromter and initialize the connection object conn\+\_\+ to nullptr 
 
-\mbox{\Hypertarget{classsavebox_1_1SB_a4498fdea14fea0ff8ab09388ea634cf5}\label{classsavebox_1_1SB_a4498fdea14fea0ff8ab09388ea634cf5}} 
+\begin{DoxyVerb}    @fn explicit SB(void)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classsavebox_1_1SB_a38907919bc4239984d2195ccffd44a23}\label{classsavebox_1_1SB_a38907919bc4239984d2195ccffd44a23}} 
 \index{SB@{SB}!````~SB@{$\sim$SB}}
 \index{````~SB@{$\sim$SB}!SB@{SB}}
 \doxysubsubsection{\texorpdfstring{$\sim$SB()}{~SB()}}
-{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classsavebox_1_1SB}{SB}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classsavebox_1_1SB}{SB}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 
 
 destruct the connection object conn\+\_\+ and set it to nullptr 
+
+\mbox{\Hypertarget{classsavebox_1_1SB_a116a6c5b0029d898838212c68391faa2}\label{classsavebox_1_1SB_a116a6c5b0029d898838212c68391faa2}} 
+\index{SB@{SB}!SB@{SB}}
+\index{SB@{SB}!SB@{SB}}
+\doxysubsubsection{\texorpdfstring{SB()}{SB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsavebox_1_1SB}{SB}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsavebox_1_1SB}{SB}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classsavebox_1_1SB_aa80d49bf31b38efe533cc25a94979e2d}\label{classsavebox_1_1SB_aa80d49bf31b38efe533cc25a94979e2d}} 
+\index{SB@{SB}!SB@{SB}}
+\index{SB@{SB}!SB@{SB}}
+\doxysubsubsection{\texorpdfstring{SB()}{SB()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsavebox_1_1SB}{SB}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsavebox_1_1SB}{SB}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 
 
@@ -96,7 +116,7 @@ destruct the connection object conn\+\_\+ and set it to nullptr
 \index{SB@{SB}!accident@{accident}}
 \index{accident@{accident}!SB@{SB}}
 \doxysubsubsection{\texorpdfstring{accident()}{accident()}}
-{\footnotesize\ttfamily bool accident (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool accident (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
 
 
@@ -110,7 +130,7 @@ Implements \mbox{\hyperlink{classsavebox_1_1ISB_a5bc8bab246e415c009a31f9d02916fa
 \index{SB@{SB}!connection@{connection}}
 \index{connection@{connection}!SB@{SB}}
 \doxysubsubsection{\texorpdfstring{connection()}{connection()}}
-{\footnotesize\ttfamily void connection (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ssid,  }\item[{const char $\ast$}]{password,  }\item[{const char $\ast$}]{url,  }\item[{const char $\ast$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void connection (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ssid,  }\item[{const char $\ast$}]{password,  }\item[{const char $\ast$}]{url,  }\item[{const char $\ast$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -122,6 +142,18 @@ make connection with database using the Adapter pattern
 
 
 Implements \mbox{\hyperlink{classsavebox_1_1ISB_a1982284a68a05ce568af14ad6df5d288}{I\+SB}}.
+
+\mbox{\Hypertarget{classsavebox_1_1SB_a4f7579904ed5b5c28493fef556026aac}\label{classsavebox_1_1SB_a4f7579904ed5b5c28493fef556026aac}} 
+\index{SB@{SB}!operator=@{operator=}}
+\index{operator=@{operator=}!SB@{SB}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsavebox_1_1SB}{SB}} \& operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsavebox_1_1SB}{SB}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classsavebox_1_1SB_afc4b1565aabd18df5d29d7ccb3450d25}\label{classsavebox_1_1SB_afc4b1565aabd18df5d29d7ccb3450d25}} 
+\index{SB@{SB}!operator=@{operator=}}
+\index{operator=@{operator=}!SB@{SB}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsavebox_1_1SB}{SB}} \& operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsavebox_1_1SB}{SB}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 \mbox{\Hypertarget{classsavebox_1_1SB_a7a6b646e8408f78beb61f9a9571cd772}\label{classsavebox_1_1SB_a7a6b646e8408f78beb61f9a9571cd772}} 
 \index{SB@{SB}!run@{run}}
@@ -141,7 +173,7 @@ Implements \mbox{\hyperlink{classsavebox_1_1ISB_a8bdce042a76a879fe2caeb87ed3b919
 \index{SB@{SB}!sendData@{sendData}}
 \index{sendData@{sendData}!SB@{SB}}
 \doxysubsubsection{\texorpdfstring{sendData()}{sendData()}}
-{\footnotesize\ttfamily void send\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void send\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
 
 
@@ -170,23 +202,35 @@ create connection object to allow to \mbox{\hyperlink{classsavebox_1_1SB}{SB}} t
 \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{Connection_8h}{Connection.\+h}} 
 \end{DoxySeeAlso}
-\mbox{\Hypertarget{classsavebox_1_1SB_a2786a9c74d31348906d13b023cf3eb11}\label{classsavebox_1_1SB_a2786a9c74d31348906d13b023cf3eb11}} 
+\mbox{\Hypertarget{classsavebox_1_1SB_a2d9337ff627a0bdf8054f4029d4f2cd7}\label{classsavebox_1_1SB_a2d9337ff627a0bdf8054f4029d4f2cd7}} 
 \index{SB@{SB}!x\_out@{x\_out}}
 \index{x\_out@{x\_out}!SB@{SB}}
 \doxysubsubsection{\texorpdfstring{x\_out}{x\_out}}
-{\footnotesize\ttfamily float x\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily x\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classsavebox_1_1SB_a7b146ee79e06cca08bb8f2c33e1b8b1d}\label{classsavebox_1_1SB_a7b146ee79e06cca08bb8f2c33e1b8b1d}} 
+
+
+axis x for A\+D\+X\+L345 
+
+\mbox{\Hypertarget{classsavebox_1_1SB_a92a746263988c6e70952572d6e5f2ae7}\label{classsavebox_1_1SB_a92a746263988c6e70952572d6e5f2ae7}} 
 \index{SB@{SB}!y\_out@{y\_out}}
 \index{y\_out@{y\_out}!SB@{SB}}
 \doxysubsubsection{\texorpdfstring{y\_out}{y\_out}}
-{\footnotesize\ttfamily float y\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily y\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classsavebox_1_1SB_af1b3b32e5b5486e6774d3a7ae2627bea}\label{classsavebox_1_1SB_af1b3b32e5b5486e6774d3a7ae2627bea}} 
+
+
+axis y for A\+D\+X\+L345 
+
+\mbox{\Hypertarget{classsavebox_1_1SB_a598010bfcfe443de4370795f98bccf68}\label{classsavebox_1_1SB_a598010bfcfe443de4370795f98bccf68}} 
 \index{SB@{SB}!z\_out@{z\_out}}
 \index{z\_out@{z\_out}!SB@{SB}}
 \doxysubsubsection{\texorpdfstring{z\_out}{z\_out}}
-{\footnotesize\ttfamily float z\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily z\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+axis z for A\+D\+X\+L345 
 
 
 

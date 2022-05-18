@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_5fout_23',['x_out',['../dc/dd0/classsavebox_1_1SB.html#a2786a9c74d31348906d13b023cf3eb11',1,'savebox::SB']]]
+  ['url_5f_23',['url_',['../d3/dce/classsavebox_1_1Connection.html#a5d3d63636763fc5b670c7cf38854a9be',1,'savebox::Connection']]]
 ];

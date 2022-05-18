@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['run_39',['run',['../dc/dd0/classsavebox_1_1SB.html#a7a6b646e8408f78beb61f9a9571cd772',1,'savebox::SB::run()'],['../dc/dee/classsavebox_1_1ISB.html#a8bdce042a76a879fe2caeb87ed3b919b',1,'savebox::ISB::run()']]]
+  ['isb_41',['ISB',['../dc/dee/classsavebox_1_1ISB.html#a88d9069d59519ff90079a943a67016b9',1,'savebox::ISB::ISB(void)=default'],['../dc/dee/classsavebox_1_1ISB.html#a4e27ea41800608cf2e99384205dd3252',1,'savebox::ISB::ISB(const ISB &amp;other)=default'],['../dc/dee/classsavebox_1_1ISB.html#a6236044d580d34bb626d4087a93512cb',1,'savebox::ISB::ISB(ISB &amp;&amp;other)=default']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z_5fout_25',['z_out',['../dc/dd0/classsavebox_1_1SB.html#af1b3b32e5b5486e6774d3a7ae2627bea',1,'savebox::SB']]]
+  ['y_5fout_25',['y_out',['../dc/dd0/classsavebox_1_1SB.html#a92a746263988c6e70952572d6e5f2ae7',1,'savebox::SB']]]
 ];

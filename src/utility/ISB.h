@@ -19,47 +19,72 @@
  */
 namespace savebox
 {
-    /**
-     * @interface ISB
-     * @brief Interface which describe the protoype of savebox
-     * @see SB 
-     */
-    class ISB 
-    {
-        public:
-            
-            /**
-             * @fn virtual ~ISB(void)
-             * @brief virtual Destructor which will be overridden by SB 
-             */
-             virtual ~ISB(void) {}
+	/**
+	 * @interface ISB
+     	 * @brief Interface which describe the protoype of savebox
+     	 * @see SB 
+     	 */
+	class ISB 
+    	{
+		public:
+			
+			/**
+			 * @fn virtual ~ISB(void)
+		         * @brief virtual Destructor which will be overridden by SB 
+		         */
+		        virtual ~ISB(void) = default;
+		     	
+			/**
+			 * @fn ISB(void)
+                         */
+		    	ISB(void) = default;
+		    	
+			/**
+ 			 * @fn ISB(const ISN& other)
+			 */
+		   	ISB(const ISB& other) = default;
+		    	
+			/**
+ 			 * @fn ISB(ISB&& other)
+                         */
+			ISB(ISB&& other) = default;
+		        
+			/**
+ 			 * @fn ISB& operator=(const ISB& other)
+			 */	
+			ISB& operator=(const ISB& other) = default;
+		    	
+			/**
+ 			 * @fn ISB operator(ISB&& other)
+			 */
+			ISB& operator=(ISB&& other) = default;
+	
+		    	/**
+		     	 * @fn virtual void connection(const char* ssid, const char* password, const char* url, const char* key) const
+		     	 * @brief method of savebox to make a connectio with database
+		     	 */
+		    	virtual void connection(const char* ssid, const char* password, const char* url, const char* key) = 0;
+		    
+		    	/**
+		     	 * @fn virtual void run(void) const
+		     	 * @brief method of savebox to use accelerometer
+		     	 */
+		     	virtual void run(void) = 0;
 
-            /**
-             * @fn  virtual void connection(const char* ssid, const char* password, const char* url, const char* key) const
-             * @brief method of savebox to make a connectio with database
-             */
-            virtual void connection(const char* ssid, const char* password, const char* url, const char* key) = 0;
-            
-            /**
-             * @fn virtual void run(void) const
-             * @brief method of savebox to use accelerometer
-             */
-             virtual void run(void) = 0;
+		private:
 
-        private:
-
-            /**
-             * @fn virtual bool accident(void)
-             * @brief method of savebox to see if there is an accident or not
-             */
-            virtual bool accident(void) = 0;
-            
-            /**
-             * @fn virtual void sendData(void) const
-             * @brief method of savebox to send data of passenger is there is an accident
-             */
-            virtual void sendData(void) = 0;
-    };
+		    	/**
+		     	 * @fn virtual bool accident(void)
+		     	 * @brief method of savebox to see if there is an accident or not
+		     	 */
+		    	virtual bool accident(void) = 0;
+		    
+		    	/**
+		     	 * @fn virtual void sendData(void) const
+		     	 * @brief method of savebox to send data of passenger is there is an accident
+		     	 */
+		    	virtual void sendData(void) = 0;
+	};
 }
 
 #endif

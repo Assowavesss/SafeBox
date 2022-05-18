@@ -11,8 +11,7 @@ Interface which describe the protoype of savebox.
 
 
 
-Inheritance diagram for I\+SB\+:
-\nopagebreak
+Inheritance diagram for I\+SB\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,8 +21,18 @@ Inheritance diagram for I\+SB\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{classsavebox_1_1ISB_a8c7d943a094b0a5725a243bbc76b91e4}{$\sim$\+I\+SB}} (void)
+virtual \mbox{\hyperlink{classsavebox_1_1ISB_a8d2cbd320ed1dc3e917dcc523f5cd91c}{$\sim$\+I\+SB}} (void)=default
 \begin{DoxyCompactList}\small\item\em virtual Destructor which will be overridden by \mbox{\hyperlink{classsavebox_1_1SB}{SB}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsavebox_1_1ISB_a88d9069d59519ff90079a943a67016b9}{I\+SB}} (void)=default
+\item 
+\mbox{\hyperlink{classsavebox_1_1ISB_a4e27ea41800608cf2e99384205dd3252}{I\+SB}} (const \mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} \&other)=default
+\item 
+\mbox{\hyperlink{classsavebox_1_1ISB_a6236044d580d34bb626d4087a93512cb}{I\+SB}} (\mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} \&\&other)=default
+\item 
+\mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} \& \mbox{\hyperlink{classsavebox_1_1ISB_a2fbfaec92ff9e53c48703df0080527ac}{operator=}} (const \mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} \&other)=default
+\item 
+\mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} \& \mbox{\hyperlink{classsavebox_1_1ISB_afaf95504ff7d323c4ec95fa5c1d30865}{operator=}} (\mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} \&\&other)=default
+\item 
 virtual void \mbox{\hyperlink{classsavebox_1_1ISB_a1982284a68a05ce568af14ad6df5d288}{connection}} (const char $\ast$ssid, const char $\ast$password, const char $\ast$url, const char $\ast$key)=0
 \begin{DoxyCompactList}\small\item\em method of savebox to make a connectio with database \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classsavebox_1_1ISB_a8bdce042a76a879fe2caeb87ed3b919b}{run}} (void)=0
@@ -46,15 +55,33 @@ Interface which describe the protoype of savebox.
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classsavebox_1_1ISB_a8c7d943a094b0a5725a243bbc76b91e4}\label{classsavebox_1_1ISB_a8c7d943a094b0a5725a243bbc76b91e4}} 
+\mbox{\Hypertarget{classsavebox_1_1ISB_a8d2cbd320ed1dc3e917dcc523f5cd91c}\label{classsavebox_1_1ISB_a8d2cbd320ed1dc3e917dcc523f5cd91c}} 
 \index{ISB@{ISB}!````~ISB@{$\sim$ISB}}
 \index{````~ISB@{$\sim$ISB}!ISB@{ISB}}
 \doxysubsubsection{\texorpdfstring{$\sim$ISB()}{~ISB()}}
-{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
 
 
 virtual Destructor which will be overridden by \mbox{\hyperlink{classsavebox_1_1SB}{SB}} 
+
+\mbox{\Hypertarget{classsavebox_1_1ISB_a88d9069d59519ff90079a943a67016b9}\label{classsavebox_1_1ISB_a88d9069d59519ff90079a943a67016b9}} 
+\index{ISB@{ISB}!ISB@{ISB}}
+\index{ISB@{ISB}!ISB@{ISB}}
+\doxysubsubsection{\texorpdfstring{ISB()}{ISB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classsavebox_1_1ISB_a4e27ea41800608cf2e99384205dd3252}\label{classsavebox_1_1ISB_a4e27ea41800608cf2e99384205dd3252}} 
+\index{ISB@{ISB}!ISB@{ISB}}
+\index{ISB@{ISB}!ISB@{ISB}}
+\doxysubsubsection{\texorpdfstring{ISB()}{ISB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classsavebox_1_1ISB_a6236044d580d34bb626d4087a93512cb}\label{classsavebox_1_1ISB_a6236044d580d34bb626d4087a93512cb}} 
+\index{ISB@{ISB}!ISB@{ISB}}
+\index{ISB@{ISB}!ISB@{ISB}}
+\doxysubsubsection{\texorpdfstring{ISB()}{ISB()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
@@ -86,6 +113,18 @@ method of savebox to make a connectio with database
 
 
 Implemented in \mbox{\hyperlink{classsavebox_1_1SB_ac94ef628a3faf19bd206a8ebe048ab68}{SB}}.
+
+\mbox{\Hypertarget{classsavebox_1_1ISB_a2fbfaec92ff9e53c48703df0080527ac}\label{classsavebox_1_1ISB_a2fbfaec92ff9e53c48703df0080527ac}} 
+\index{ISB@{ISB}!operator=@{operator=}}
+\index{operator=@{operator=}!ISB@{ISB}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} \& operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classsavebox_1_1ISB_afaf95504ff7d323c4ec95fa5c1d30865}\label{classsavebox_1_1ISB_afaf95504ff7d323c4ec95fa5c1d30865}} 
+\index{ISB@{ISB}!operator=@{operator=}}
+\index{operator=@{operator=}!ISB@{ISB}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}}\& operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsavebox_1_1ISB}{I\+SB}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 \mbox{\Hypertarget{classsavebox_1_1ISB_a8bdce042a76a879fe2caeb87ed3b919b}\label{classsavebox_1_1ISB_a8bdce042a76a879fe2caeb87ed3b919b}} 
 \index{ISB@{ISB}!run@{run}}

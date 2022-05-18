@@ -15,7 +15,7 @@
 // To avoid to write safebox::....
 using namespace savebox;
 
-SB::SB(void) : conn_(nullptr)
+SB::SB(void) : conn_{nullptr}
 {
 	  Wire.begin();
 	  Wire.beginTransmission(ADXL345);
@@ -35,9 +35,9 @@ SB::~SB(void)
 /**
  * @details
  */
-bool SB::accident(void)
+inline bool SB::accident(void)
 {
-    return false;
+    return x_out > 255 ? true : false;
 }
 
 
@@ -62,12 +62,16 @@ void SB::run(void)
 	  Serial.print(y_out);
 	  Serial.print("   Za= ");
 	  Serial.println(z_out);
+      if(accident()){
+          sendData();
+          exit(0);
+      }
 }
 
 /**
  * @details
  */
-void SB::connection(const char* ssid, const char* password, const char* url, const char* key)
+inline void SB::connection(const char* ssid, const char* password, const char* url, const char* key)
 {
    if(!conn_){
        conn_ = new Connection(ssid,password,url,key);
@@ -79,7 +83,7 @@ void SB::connection(const char* ssid, const char* password, const char* url, con
 /**
  * @details
  */ 
-void SB::sendData(void)
+inline void SB::sendData(void)
 {
-
+    conn_->sendData();
 }
